@@ -1,29 +1,60 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hello world!</title>
+        <title>👋 Hello world!</title>
 
         <link rel="stylesheet" href="style.css">
         <script defer src="app.js"></script>
     </head>
     <body>
-        <section>
-            <h1 class="hidden">Hello World!</h1>
+        <div class="progress-bar">
+            <div class="progress-bar__wrapper">
+                <div class="progress-bar__line">
+                    <div class="progress"></div>
+                </div>
+                <div class="progress-bar__step complete">
+                    <span class="indicator">
+                        <span class="icon"></span>
+                    </span>
+                    <span class="label">Step 1</span>
+                </div>
+                <div class="progress-bar__step active">
+                    <span class="indicator">
+                        <span class="icon"></span>
+                    </span>
+                    <span class="label" title="Step 2 Stap met een lange label">Step 2 label</span>
+                </div>
+                <div class="progress-bar__step">
+                    <span class="indicator">
+                        <span class="icon"></span>
+                    </span>
+                    <span class="label">Step 3</span>
+                </div>
+                <div class="progress-bar__step">
+                    <span class="indicator">
+                        <span class="icon"></span>
+                    </span>
+                    <span class="label">Step 4</span>
+                </div>
+            </div>
+        </div>
+        <section id="section-1">
+            <h1 class="fade-in">Hello World! <span class="fade-in">👋</span></h1>
         </section>
         <section>
             <div class="content">
-                <h2 class="hidden">This is my website</h2>
+                <h2 class="fade-in">This is my website</h2>
             </div>
         </section>
-        <section>
+        <section id="section-2">
             <div class="content">
-                <h2 class="hidden">It's the best</h2>
+                <h2 class="fade-in">It's the best</h2>
             </div>
         </section>
-        <section>
+        <section id="section-3">
             <div class="content">
-                <h2 class="hidden">Ok bye 👋</h2>
-                <p class="hidden">Some inspirational quote</p>
+                <h2 class="fade-in">Ok doei</h2>
+                <p class="fade-in">Inspirational quote</p>
             </div>
         </section>
     </body>

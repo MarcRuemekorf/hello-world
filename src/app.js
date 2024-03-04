@@ -1,15 +1,14 @@
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry);
         if(entry.isIntersecting) {
-            entry.target.classList.add('show');
+            entry.target.classList.add('active');
         }
 
         if(!entry.isIntersecting) {
-            entry.target.classList.remove('show');
+            entry.target.classList.remove('active');
         }
     });
 });
 
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((element) => observer.observe(element));
+const sections = document.querySelectorAll('.fade-in');
+sections.forEach((element) => observer.observe(element));
